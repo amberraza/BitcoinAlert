@@ -24,7 +24,14 @@ def get_prices():
             to="",
             #phone number given by twilio
             from_="",
-            body="1 Bitcoin = "+price)
+            body="Buy coins! 1 Bitcoin = "+price)
+    elif(price>'20000'):
+        message = client.messages.create(
+            #phone number to send to
+            to="",
+            #phone number given by twilio
+            from_="",
+            body="Sell coins! 1 Bitcoin = "+price)
 
 scheduler = BlockingScheduler()
 scheduler.add_job(get_prices, 'interval', hours=1)
