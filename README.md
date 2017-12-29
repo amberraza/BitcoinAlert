@@ -4,7 +4,7 @@ Bitcoin price alert is sent to your phone whenever the price goes down the given
   - Initialize the account id and authorization token given by twilio.
   - Get the current price via google search.
   - Initialize the client for the alert.
-  - Check for the threshold value.
+  - Check for the threshold value for buying or selling the coins.
   - Send the alert to the given phone if the condition is met.
   - Schedule the job.
   - Start the scheduler.
