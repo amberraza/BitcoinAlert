@@ -1,4 +1,4 @@
-# BitcoinAlert Update
+# BitcoinAlert
 
 Bitcoin price alert is sent to your phone whenever the price goes down the given threshold. The job is scheduled to run every hour. Following are the steps to send the alert:
 	- Import the twilio Client class from twilio.rest module and BlockingScheduler class from apscheduler module.
